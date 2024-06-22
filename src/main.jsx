@@ -13,6 +13,7 @@ import Home from "./components/Home/Home.jsx";
 import About from "./components/About/About.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import User from "./components/User/User.jsx";
+import ThemeApp from "./components/ThemeApp.jsx";
 import GitHub, { githubInfoLoader } from "./components/GitHub/GitHub.jsx";
 
 // routing two way
@@ -49,6 +50,7 @@ const router = createBrowserRouter(
       <Route path="user/:userid" element={<User />} />
       <Route loader={githubInfoLoader} path="github" element={<GitHub />} />
       <Route path="app" element={<App />} /> {/* Add this route */}
+      <Route path="theme" element={<ThemeApp />} /> {/* Add this route */}
     </Route>
   )
 );
